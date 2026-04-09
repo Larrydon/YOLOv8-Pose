@@ -1,0 +1,21 @@
+path: dataset # dataset root dir
+train: train/images # train images (relative to 'path')
+val: val/images # val images (relative to 'path')
+test: # test images (optional)
+
+# Keypoints
+kpt_shape: [4, 3]  # 4 個角點，每個點 (x, y, visibility)
+flip_idx: [1, 0, 3, 2] # 假設標註順序是：[0:左上, 1:右上, 2:右下, 3:左下]
+
+# Classes
+names:
+  0: license_plate
+
+# Keypoint names per class (這裡必須改成 4 個點)
+# 這裡的名字可以自定義，方便你在標註工具或結果圖中辨識
+kpt_names:
+  0:
+    - top_left
+    - top_right
+    - bottom_right
+    - bottom_left
