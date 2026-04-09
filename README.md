@@ -5,6 +5,8 @@
 接著 refine_label.py 利用OpenCV自動找4頂點，自動修正更好的4頂點座標
 (src\refine_label.py)
 
+訓練完成的 best.pt 更名成以後要使用的 yolov8s_pose_license_plate.pt
+
 
 ## 環境 ##
 Python 3.10.19
